@@ -8,7 +8,7 @@ export default function BasicButtons() {
       <Button>Button</Button>
       <Button disabled>Disabled</Button>
       <Button loading>Loading</Button>
-      <Button startDecorator={<Add />}>whomst'd've'ly'yaint'nt'ed'ies's'y'es</Button>
+      <Button startDecorator={<Add />}>bruh</Button>
     </Box>
   );
 }
