@@ -9,7 +9,7 @@ export default function BasicButtons() {
       <Button>Button</Button>
       <Button disabled>Disabled</Button>
       <Button loading>Loading</Button>
-      <Button startDecorator={<Add />}>bruh</Button>
+      <Button variant="outlined" startDecorator={<Add />}>bruh</Button>
     </Box>
   );
 }
