@@ -12,6 +12,8 @@ ReactDOM.createRoot(document.querySelector("#root")!).render(
         
         <Demo />
         <Demo />
+        <Demo2 />
+        <Demo2 />
         
       </CssVarsProvider>
     </StyledEngineProvider>
