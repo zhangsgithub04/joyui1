@@ -11,7 +11,7 @@ export default function StepsSlider() {
   return (
     <Box sx={{ width: 300 }}>
       <Button>In component2</Button>
-      {/*  
+     
         <Slider
         aria-label="Small steps"
         defaultValue={0.00000005}
@@ -22,7 +22,7 @@ export default function StepsSlider() {
         max={0.0000001}
         valueLabelDisplay="auto"
       />
-      */}
+   
       
     </Box>
   );
