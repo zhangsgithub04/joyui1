@@ -7,7 +7,7 @@ import Demo2 from './Demo2';
 
 import { StepsSlider } from './Component2';
 
-import SSlider  from './Component2/SSlider';
+import SSlider  from './component3/SSlider';
 ReactDOM.createRoot(document.querySelector("#root")!).render(
   <React.StrictMode>
     <StyledEngineProvider injectFirst>
