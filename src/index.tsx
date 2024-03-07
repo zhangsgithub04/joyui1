@@ -5,7 +5,7 @@ import Demo from './Demo';
 
 import Demo2 from './Demo2';
 
-import StepsSlider from './Component2.tsx';
+import StepsSlider from './Component2';
 
 ReactDOM.createRoot(document.querySelector("#root")!).render(
   <React.StrictMode>
