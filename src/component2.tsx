@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/joy/Box';
 import Slider from '@mui/joy/Slider';
+import Button from '@mui/joy/Button';
 
 function valueText(value: number) {
   return `${value}°C`;
@@ -9,7 +10,9 @@ function valueText(value: number) {
 export default function StepsSlider() {
   return (
     <Box sx={{ width: 300 }}>
-      <Slider
+      <Button>In component2</Button>
+      {/*  
+        <Slider
         aria-label="Small steps"
         defaultValue={0.00000005}
         getAriaValueText={valueText}
@@ -19,6 +22,8 @@ export default function StepsSlider() {
         max={0.0000001}
         valueLabelDisplay="auto"
       />
+      */}
+      
     </Box>
   );
 }
