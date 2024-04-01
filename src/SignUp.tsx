@@ -32,8 +32,8 @@ function SignUp() {
     return (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}>
             <div style={{ width: '100%', maxWidth: '400px', margin: 'auto', padding: '20px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)', borderRadius: '8px' }}>
-                <Typography variant="h5" component="h1" textAlign="center" gutterBottom>
-                    Sign Up
+                <Typography variant="h3" component="h1" textAlign="center" gutterBottom>
+                    Collaboration starts here 🚀
                 </Typography>
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                     <TextField
@@ -60,8 +60,12 @@ function SignUp() {
                         control={<Checkbox name="termsAgreed" checked={formState.termsAgreed} onChange={handleInputChange} />}
                         label="I agree to the Terms of Service and Privacy Policy"
                     />
-                    <Button type="submit" variant="contained" color="primary">Create Account</Button>
-                    <Button variant="text">Already have an account? Sign in instead</Button>
+                    <Button type="submit" variant="contained" style={{ backgroundColor: 'pink' }}>
+                        Create Account
+                    </Button>
+                    <Typography variant="body2" style={{ textAlign: 'center', color: 'pink' }}>
+                        Already have an account? Sign in instead
+                    </Typography>
                 </form>
             </div>
         </div>
