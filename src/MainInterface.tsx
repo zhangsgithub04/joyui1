@@ -4,16 +4,16 @@ import SearchIcon from '@mui/icons-material/Search';
 import AddIcon from '@mui/icons-material/Add';
 import StarBorder from '@mui/icons-material/StarBorder';
 import MenuIcon from '@mui/icons-material/Menu';
+import { pink } from '@mui/material/colors';
 
 const drawerWidth = 240;
 
 const MainInterface = () => {
-  // This is a placeholder for navigation items. You might map over an array of items.
   const navigationItems = ['Ava', 'Boards', 'Agent', 'Beta', 'Feedback'];
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar position="fixed">
+      <AppBar position="fixed" sx={{ bgcolor: pink[500] }}> {/* Changed AppBar color to pink */}
         <Toolbar>
           <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
             <MenuIcon />
@@ -43,10 +43,9 @@ const MainInterface = () => {
         <Toolbar />
         <Box sx={{ overflow: 'auto' }}>
           <List>
-            {navigationItems.map((text, index) => (
+            {navigationItems.map((text) => (
               <ListItem button key={text}>
                 <ListItemIcon>
-                  {/* You would use your actual icons here */}
                   <MenuIcon />
                 </ListItemIcon>
                 <ListItemText primary={text} />
@@ -61,9 +60,8 @@ const MainInterface = () => {
           All Boards
         </Typography>
         <Grid container spacing={3}>
-          {/* Placeholder for board cards. You would map over your board data here. */}
           <Grid item xs={12} sm={6} md={4} lg={3}>
-            <Paper sx={{ height: 140, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Paper sx={{ height: 140, display: 'flex', alignItems: 'center', justifyContent: 'center', bgcolor: pink[500] }}> {/* Changed Paper color to pink */}
               <AddIcon fontSize="large" />
               <Typography>Create New</Typography>
             </Paper>
@@ -73,6 +71,10 @@ const MainInterface = () => {
       </Box>
     </Box>
   );
+};
+
+export default MainInterface;
+
 };
 
 export default MainInterface;
