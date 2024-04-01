@@ -5,6 +5,7 @@ import SignUp from './SignUp';
 import SignIn from './SignIn';
 import MainInterface from './MainInterface';
 import CreateRoom from './CreateRoom';
+import ColorPicker from './ColorPicker';
 
 const rootElement = document.getElementById('root');
 
@@ -18,12 +19,22 @@ if (rootElement) {
                     <Route path="/signin" element={<SignIn />} />
                     <Route path="/maininterface" element={<MainInterface />} />
                     <Route path="/createroom" element={<CreateRoom />} />
+                    <Route path="/colorpicker" element={<ColorPicker />} />
                 </Routes>
                 <div style={{ textAlign: 'center', marginTop: '20px' }}>
-                    <Link to="/signup">Sign Up</Link> | <Link to="/signin">Sign In</Link>
+                    <Link to="/signup">Sign Up</Link> 
                 </div>
                 <div style={{ textAlign: 'center', marginTop: '20px' }}>
-                    <Link to="/maininterface">Go to Main Interface</Link> | <Link to="createroom">Create Room</Link>
+                    <Link to="/signin">Sign In</Link>
+                </div>
+                <div style={{ textAlign: 'center', marginTop: '20px' }}>
+                    <Link to="/maininterface">Go to Main Interface</Link> 
+                </div>
+                <div style={{ textAlign: 'center', marginTop: '20px' }}>
+                    <Link to="createroom">Create Room</Link>
+                </div>
+                <div style={{ textAlign: 'center', marginTop: '20px' }}>
+                    <Link to="colorpicker">Color Picker</Link>
                 </div>
             </BrowserRouter>
         </React.StrictMode>
