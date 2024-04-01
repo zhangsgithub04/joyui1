@@ -74,7 +74,3 @@ const MainInterface = () => {
 };
 
 export default MainInterface;
-
-};
-
-export default MainInterface;
