@@ -1,22 +1,15 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom/client';
-import { StyledEngineProvider, CssVarsProvider } from '@mui/joy/styles';
-import SignUp from './SignUp'; // Import SignUp component
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import SignUp from './SignUp'; // Ensure this path is correct
 
-// Get the root element to render your app
 const rootElement = document.getElementById('root');
 
 if (rootElement) {
     const root = ReactDOM.createRoot(rootElement);
     root.render(
         <React.StrictMode>
-            <StyledEngineProvider injectFirst>
-                <CssVarsProvider>
-                    <SignUp /> {/* Render the SignUp component directly */}
-                </CssVarsProvider>
-            </StyledEngineProvider>
+            <SignUp /> {/* Directly render the SignUp component */}
         </React.StrictMode>
     );
 }
-
 
