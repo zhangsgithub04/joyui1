@@ -28,7 +28,7 @@ if (rootElement) {
                     <Link to="/signin">Sign In</Link>
                 </div>
                 <div style={{ textAlign: 'center', marginTop: '20px' }}>
-                    <Link to="/maininterface">Go to Main Interface</Link> 
+                    <Link to="/maininterface">Main Interface</Link> 
                 </div>
                 <div style={{ textAlign: 'center', marginTop: '20px' }}>
                     <Link to="createroom">Create Room</Link>
