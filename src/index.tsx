@@ -7,6 +7,12 @@ import Demo2 from './Demo2';
 import Component2 from './Component2';
 import App from './App';  // Ensure this is the correct path to your App component
 
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 // Get the root element to render your app
 const rootElement = document.querySelector("#root");
 
