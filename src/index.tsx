@@ -17,7 +17,7 @@ if (rootElement) {
                     <Route path="/signup" element={<SignUp />} />
                     <Route path="/signin" element={<SignIn />} />
                     <Route path="/maininterface" element={<MainInterface />} />
-                    <Route path="/createroom" element={CreateRoom />} />
+                    <Route path="/createroom" element={<CreateRoom />} />
                 </Routes>
                 <div style={{ textAlign: 'center', marginTop: '20px' }}>
                     <Link to="/signup">Sign Up</Link> | <Link to="/signin">Sign In</Link>
