@@ -13,9 +13,9 @@ if (rootElement) {
         <React.StrictMode>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<SignUp />} />
-                    <Route path="/signin" element={<SignIn />} />
-                    <Route path="/main" element={<MainInterface />} />
+                    <Route path="/SignUp" element={<SignUp />} />
+                    <Route path="/SignIn" element={<SignIn />} />
+                    <Route path="/MainInterface" element={<MainInterface />} />
                 </Routes>
                 {/* Link to the MainInterface */}
                 <footer style={{textAlign: 'center', marginTop: '20px'}}>
