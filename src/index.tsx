@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import SignUp from './SignUp'; // Ensure this path is correct
+import SignUp from './SignUp'; 
+import SignIn from './SignIn';
 
 const rootElement = document.getElementById('root');
 
@@ -8,7 +9,8 @@ if (rootElement) {
     const root = ReactDOM.createRoot(rootElement);
     root.render(
         <React.StrictMode>
-            <SignUp /> {/* Directly render the SignUp component */}
+            <SignUp /> {}
+            <SignIn /> {}
         </React.StrictMode>
     );
 }
