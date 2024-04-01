@@ -3,7 +3,7 @@
     "@emotion/react": "latest",
     "@emotion/styled": "latest",
     "@mui/joy": "latest",
-    "@mui/material": "latest", // This line should be added
+    "@mui/material": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "react": "latest",
