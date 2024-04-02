@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Button, TextField, Typography, Paper } from '@mui/material';
 import { pink } from '@mui/material/colors';
+import Link from '@mui/joy/Link';
+
 
 interface SignInState {
     email: string;
@@ -52,8 +54,10 @@ const SignIn = () => {
                     <Button type="submit" variant="contained" style={{ backgroundColor: pink[500], color: 'white' }}>
                         Log in
                     </Button>
-                    <Typography variant="body2" textAlign="center" style={{ color: pink[500], cursor: 'pointer' }}>
-                        Forgot Password
+                    <Typography  variant="body2" textAlign="center" style={{ color: pink[500], cursor: 'pointer' }}>
+                        <Link href="#SignUp" variant="solid">
+                            Forgot Password
+                        </Link>
                     </Typography>
                 </form>
             </Paper>
