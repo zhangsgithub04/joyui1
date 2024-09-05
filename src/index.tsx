@@ -13,6 +13,7 @@ ReactDOM.createRoot(document.querySelector("#root")!).render(
         <Demo />
              <Demo2 />
         <Component2 />
+        <DockerHubUI/>
       </CssVarsProvider>
     </StyledEngineProvider>
   </React.StrictMode>
